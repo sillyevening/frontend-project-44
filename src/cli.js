@@ -1,4 +1,9 @@
-import readlineSync from '../readline-sync/lib/readline-sync.js';
+import readlineSync from 'readline-sync';
 
 
-export {readlineSync} ;
+  export default  function cli() {
+        console.log('Welcome to the Brain Games!');
+        console.log('May i have your name?');
+        let name = readlineSync.question('Your answer: ');
+        console.log(`Hello, ${name}!`)
+    }
